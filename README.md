@@ -8,4 +8,6 @@ gcc filename
 ./a.out
 ````
 
-- stack.cpp (cal) - use pointer and array to controll stack
+- stack.cpp (cal) - use pointer and array to control stack
+- towerOfHanoi.c (Plan) - use simple recursion to implement tower of hanoi problem
+- fac-with-dynamic-recur-tailcall.c (Plan) - implement factorial calculate in 3 algorithm
