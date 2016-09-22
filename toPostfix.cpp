@@ -12,10 +12,12 @@ int main()
 	stack<char> myStack;
 	char equation[1000];
 	char* ptr=equation;
+
 	printf("input infix: ");
 	scanf("%s",equation);
+
 	while(*ptr!='\0'){
-		if(*ptr=='(')
+		if(*ptr=='(')	//manage bracket
 		{
 			myStack.push('(');
 		}
@@ -26,25 +28,29 @@ int main()
 			}
 			myStack.pop();
 		}
-		else if(priority(*ptr)>0)
+		else if(priority(*ptr)>0)	//operator check
 		{
-				while(myStack.size()!=0){
-					if(hasHigherPriority(myStack.top(),*ptr)==0)break;
+				while(myStack.size()!=0){ //pop until top of stack has lower priority than *ptr or stack is empty
+					if(hasHigherPriority(myStack.top(),*ptr)==0)
+						break;
 					printf("%c",myStack.top());
 					myStack.pop();
 				}
 			
 			myStack.push(*ptr);
 		}
-		else
+		else	//operand
 			printf("%c",*ptr);
 		ptr++;
 	}
+
+	//clear stack
 	while(myStack.size()>0){
 		printf("%c",myStack.top());
 		myStack.pop();
 	}
 	printf("\n");
+	return 0;
 }
 
 int priority(char op)
