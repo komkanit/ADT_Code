@@ -52,7 +52,7 @@ int main()
 		solution.pop();
 	}
 	printf("\n");
-
+	return 0;
 }
 
 int priority(char op)

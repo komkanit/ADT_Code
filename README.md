@@ -15,3 +15,4 @@ make TARGET="/*FILE'S NAME YOU WANT TO RUN*/"
 
 * STL	= standard template library
 		= cpp library with simple ADT and algorithm
+		= see example at STLstack.cpp (can't compile and run)
