@@ -1,6 +1,6 @@
 .PHONY: run
 run:
-	@g++ $(ARGS)
-	@echo "Compiling $(ARGS) complete."
+	@g++ $(TARGET)
+	@echo "Compiling $(TARGET) complete."
 	@./a.out
 	@rm ./a.out
