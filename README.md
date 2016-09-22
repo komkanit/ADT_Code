@@ -13,6 +13,4 @@ make TARGET="/*FILE'S NAME YOU WANT TO RUN*/"
 - toPostfix.cpp (Plan) - change infix to postfix using  STL stack
 - toPrefix.cpp (Plan) - change infix to prefix using STL stack
 
-* STL	= standard template library
-		= cpp library with simple ADT and algorithm
-		= see example at STLstack.cpp (can't compile and run)
+* STL = cpp library with simple ADT and algorithm, see example at STLstack.cpp (can't compile and run)
