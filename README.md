@@ -9,3 +9,4 @@ gcc filename
 ````
 
 - stack.cpp (cal) - use pointer and array to controll stack
+- sizeof.c (cal) - print variable and struct size
