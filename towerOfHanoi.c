@@ -28,6 +28,6 @@ int main()
 
 	printf("input number of disk: ");
 	scanf("%d",&numberOfDisk);
-	hanoi(numberOfDisk,a,b,c);
+	hanoi(numberOfDisk,a,c,b);
 }
 
