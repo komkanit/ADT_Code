@@ -14,5 +14,6 @@ make TARGET="/*FILE'S NAME YOU WANT TO RUN*/"
 - toPostfix.cpp (Plan) - change infix to postfix using  STL stack
 - toPrefix.cpp (Plan) - change infix to prefix using STL stack
 - passBy.c (cal) - example pass data by value and pass by ref
-
+- memoryAllocation.c (tid) - example memory allocate
+- tidHanoi.c (tid) - hanoi for remember to quiz
 * STL = cpp library with simple ADT and algorithm, see example at STLstack.cpp (can't compile and run)
