@@ -1,9 +1,7 @@
 #include<stdio.h>
 
 void hanoi(int num,char a[],char b[],char c[]) {
-  if(num == 1) {
-    printf("move disk 1 from %s to %s\n", a, c);
-  } else {
+  if(num > 0) {
     hanoi(num -1 , a, c, b);
     printf("move disk %d from %s to %s\n", num, a, c);
     hanoi(num - 1, b, a, c);
