@@ -25,10 +25,16 @@ int CopyAVLTree(TYPE_NODEPTR T1,TYPE_NODEPTR *T2){
         (*T2) -> Right -> Parent = (*T2);
     }
 
-    /*  Use these is better
+    /*  Use these instead of line 14 - 26.
         
-        if(CopyAVLTree(T1 -> Left, (*T2) -> Left))
-
+        if( CopyAVLTree(T1 -> Left, &((*T2) -> Left)) ){
+            (*T2) -> Left -> Parent = (*T2);
+        }
+        
+        if( CopyAVLTree(T1 -> Right, &((*T2) -> Right)) ){
+            (*T2) -> Right -> Parent = (*T2);
+        }
+        
     */
 
     return 1;
